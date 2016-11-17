@@ -171,7 +171,7 @@ figcaption { /* set specific rules for the figcaption */
 @media screen and (min-width: 790px) {
   html {
     font-size: 1.296em;
-    background-color: orange;
+    background-color: #ffcc33; /* pastel orange */
     margin: 0 5% 0 5%;
   }
   
