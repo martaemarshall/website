@@ -84,14 +84,14 @@ iframe { /* Making the videos and images block display and a border */
 
 .navigation li { /* Keeps the navigation link lined up & stretch across page*/
   float: left;
-  width: 25%; /* 3 links in the navigation bar */
+  width: 25%; /* 4 links in the navigation bar */
 }
 
-.navigation li a { /* Allows a clickable box for nav links */
+.navigation li a{ /* Allows a clickable box for nav links */
   background-color: #090f0f;
   color: white;
   font-weight: bold;
-  text-align:center;
+  text-align: center;
 }
 
 figcaption { /* set specific rules for the figcaption */
@@ -152,7 +152,7 @@ figcaption { /* set specific rules for the figcaption */
 
 @media screen and (min-width: 373px){
   html {
-    background-color: #b19cd9; /* purple */
+    background-color: #b19cd9; /* pastel purple */
   }
   
   .navigation li a {
