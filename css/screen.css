@@ -115,6 +115,7 @@ figcaption { /* set specific rules for the figcaption */
 .u-email,
 .u-url { /* center the header objects and the url & email */
   text-align: center;
+  padding-bottom: 0.611em;
 }
 
 #resume { /* setting specific font for the resume page */
