@@ -37,9 +37,9 @@ h3 { /* Modify all h3 elements */
   padding-bottom: 1.132em;
 }
 
-nav,
-ul,
-p { /* Modify all nav, p, and ul elements */
+
+#main ul,
+p { /* Modify all p, and ul elements*/
   padding-bottom: 1.125em;
 }
 
@@ -80,24 +80,15 @@ iframe { /* Making the videos and images block display and a border */
   width: 100%;
   top: 0;
   left: 0;
-  height: 3.556em; /* 3 gridlines = 64px / 16px 
 }
 
-.navigation { /* sets nav links and the width */
-  width: 100%;
-  margin: 0;
-  padding-left: -1.125em;
-}
-.navigation li { /* Keeps the navigation link lined up */
+.navigation li { /* Keeps the navigation link lined up & stretch across page*/
   float: left;
-  width: 33.333%;
-  padding-bottom: 0;
+  width: 33.333%; /* 3 links in the navigation bar */
 }
 
 .navigation li a { /* Allows a clickable box for nav links */
-  display: block;
-  background-color: black;
-  padding: 0.5625em; 
+  background-color: #090f0f;
   color: white;
   font-weight: bold;
   text-align:center;
