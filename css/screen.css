@@ -95,6 +95,9 @@ iframe { /* Making the videos and images block display and a border */
   text-align: center;
 }
 
+.navigation li:hover a { /* Making a bar that lights when selected */
+  background: blue;
+}
 figcaption { /* set specific rules for the figcaption */
   font-family: 'lucida sans';
   font-weight: bold;
