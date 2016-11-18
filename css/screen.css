@@ -57,7 +57,7 @@ footer { /* Modify all footer elements */
 }
 
 img,
-iframe { /* Making the videos and images block display and a border */
+video { /* Making the videos and images block display and a border */
   display: block;
   max-width: 100%;
 }
