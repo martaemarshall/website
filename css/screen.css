@@ -65,7 +65,7 @@ video { /* Making the videos and images block display and a border */
 
 /* ===== LAYOUT STYLES ===== */
 #header {
-  padding-top: 4.125em; /* 66px (nav box & 2 gridline), 66px / 16px = 4.125em */
+  padding-top: 3.667em; /* 66px (nav box & 2 gridline), 66px / 18px = 3.667em */
 }
 
 #navigation li a,
