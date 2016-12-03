@@ -54,8 +54,9 @@ figcaption {
 }
 
 footer { /* Modify all footer elements */
-  font-size: 0.772em;
-  background-color: white;
+  font-size: 0.772em; /* 12.352px */
+  color: #ffffcc;
+  background-color: black;
 }
 
 /* ===== LAYOUT STYLES ===== */
@@ -69,62 +70,42 @@ footer { /* Modify all footer elements */
   position: absolute;
   top: 0;
   width: 100%;
-  text-align: center;
+}
+
+#navigation li a { /* Allows a clickable box for nav links */ 
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  text-align: center;  
+  padding: 1.222em 0 1.222em 0;
+}
+
+#navigation li:hover a { /* Making a bar that lights when selected */
+  background-color: gray;
 }
 
 #main {
   padding: 1.222em 3.667em;
 }
 
-/*#navigation { 
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  font-size: 0.878em;
-}
-
-.navigation li a{  Allows a clickable box for nav links 
-  background-color: #090f0f;
-  color: white;
-  font-weight: bold;
+.footer {
   text-align: center;
+  padding: 0.891em 0 0.891em 0;
 }
 
-.navigation li:hover a { Making a bar that lights when selected 
-  background: blue;
-}*/
-
-.u-email,
-.u-url { /* set the color of the url & email links */
+/*.u-email,
+.u-url { /* set the color of the url & email links 
   color: blue;
 }
 /* ===== MODULAR STYLES ===== */
-figure {
+figure,
+#navigation li a {
   display: block;
 }
 
 #navigation li { /* Keeps the navigation link lined up & stretch across page */
   float: left;
-  width: 20%; /* 4 links in the navigation bar */
-}
-
-#home header h1,
-#home header h3,
-#aesthepics header h3,
-#tab header h3,
-.u-email,
-.u-url { /* center the header objects and the url & email */
-  text-align: center;
-  padding-bottom: 0.611em;
-}
-
-#resume { /* setting specific font for the resume page */
-  font: 'garamond';
-}
-#resume #main ul { /* set padding to the main */
-  padding-top: 0.611em;
-  padding-left: 1.222em;
+  width: 20% /* 5 links in the navigation bar */
 }
 
 /* ===== STATE STYLES ===== */
@@ -176,7 +157,7 @@ figure {
 @media screen and (min-width: 1103px) {
   html {
     font-size: 1.383em;
-    background-color: #ffff99; /* pastel yellow */
+    background-color: teal; /*#ffff99; pastel yellow */
   }
   
    .navigation li a {
