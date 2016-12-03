@@ -16,19 +16,27 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html { /* Modify font size, height of lines & spacing in html page  */
   font-size: 1.125em; /* 18px / 16px = 1.125em*/
-  line-height: 1.222em; /* 22px is 1 gridline at 16px | 22px / 18px = 1.222em */
-  width: 0 5% 0 5%;
+  line-height: 1.222em; /* 22px is 1 gridline | 22px / 18px = 1.222em */
   background-color: #d3d3d3; /* color of background: light gray */
   font-family: cambria, calibri;
-  margin: 0 5% 0 5%;
+}
+
+header {
+  padding-top: 3.667em;
 }
 
 h1 { /* Modify all h1 elements */
   font-size: 1.793em; /* 28.688px */
-  line-height: 0.767em; /* 22px / 28.688px */
-  padding-bottom: 0.767em;
-  font-weight: bold;
-  text-align: center;
+  line-height: 1.534em; /* 44px / 28.688px */
+  padding-bottom: 1.534em;
+}
+
+h2 { /* Modify all h2 elements */
+  font-size: 1.476em; /* 23.616px */
+  line-height: 0.932em; /* 22px / 23.616 */
+  padding-top: 0.932em;
+  padding-bottom: 0.466em;
+  
 }
 
 h3 { /* Modify all h3 elements */
@@ -37,45 +45,38 @@ h3 { /* Modify all h3 elements */
   padding-bottom: 1.132em;
 }
 
-
-#main ul,
-p { /* Modify all p, and ul elements*/
-  padding-bottom: 1.125em;
-}
-
-h2 { /* Modify all h2 elements */
-  font-size: 1.383em; /* 22.128px */
-  padding-top: 0.497em; /* 11 / 22.128 */
-  padding-bottom: 0.497em ; /* 11px / 22.128px */
-  font-weight: Bold;
-  text-transform: uppercase;
-  text-decoration: underline;
-}
-
-footer { /* Modify all footer elements */
-  font-style: italic;
-}
-
-img,
-video { /* Making the videos and images block display and a border */
-  display: block;
+figure {
   max-width: 100%;
 }
 
-
-/* ===== LAYOUT STYLES ===== */
-#header {
-  padding-top: 3.667em; /* 66px (nav box & 2 gridline), 66px / 18px = 3.667em */
+figcaption {
+  padding-bottom: 1.222em;
 }
 
+footer { /* Modify all footer elements */
+  font-size: 0.772em;
+  background-color: white;
+}
+
+/* ===== LAYOUT STYLES ===== */
 #navigation li a,
 .u-url,
-.u-email { /* Removes underlines from href links & block display */
-  display: block;
+.u-email { /* Removes underlines from href links */
   text-decoration: none;
 }
 
-#navigation { /* Moves the navigation links to the top of the webpage */
+#navigation {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#main {
+  padding: 1.222em 3.667em;
+}
+
+/*#navigation { 
   position: absolute;
   width: 100%;
   top: 0;
@@ -83,34 +84,30 @@ video { /* Making the videos and images block display and a border */
   font-size: 0.878em;
 }
 
-.navigation li { /* Keeps the navigation link lined up & stretch across page*/
-  float: left;
-  width: 25%; /* 4 links in the navigation bar */
-}
-
-.navigation li a{ /* Allows a clickable box for nav links */
+.navigation li a{  Allows a clickable box for nav links 
   background-color: #090f0f;
   color: white;
   font-weight: bold;
   text-align: center;
 }
 
-.navigation li:hover a { /* Making a bar that lights when selected */
+.navigation li:hover a { Making a bar that lights when selected 
   background: blue;
-}
-figcaption { /* set specific rules for the figcaption */
-  font-family: 'lucida sans';
-  font-weight: bold;
-  padding-bottom: 1.215em; /* 44px is the length of 2 gridlines, 44px / 16px = 2.75em*/
-  padding-left: 1.125em;
-  text-align: left;
-}
+}*/
 
 .u-email,
 .u-url { /* set the color of the url & email links */
   color: blue;
 }
 /* ===== MODULAR STYLES ===== */
+figure {
+  display: block;
+}
+
+#navigation li { /* Keeps the navigation link lined up & stretch across page */
+  float: left;
+  width: 20%; /* 4 links in the navigation bar */
+}
 
 #home header h1,
 #home header h3,
@@ -128,17 +125,6 @@ figcaption { /* set specific rules for the figcaption */
 #resume #main ul { /* set padding to the main */
   padding-top: 0.611em;
   padding-left: 1.222em;
-}
-
-.iit li,
-.kauffman li,
-.theresa li,
-.mcdonald li,
-.circlek li,
-.bsu li,
-.legacy li,
-.cs4all li { /* Indenting list elements of different parts of the resume */
-  padding-left: 0.611em;
 }
 
 /* ===== STATE STYLES ===== */
@@ -168,7 +154,6 @@ figcaption { /* set specific rules for the figcaption */
   html {
     font-size: 1.215em;
     background-color: #87ceeb; /* sky blue */
-    margin: 0 5% 0 5%;
   }
   
    .navigation li a {
@@ -180,7 +165,6 @@ figcaption { /* set specific rules for the figcaption */
   html {
     font-size: 1.296em;
     background-color: #ffcc33; /* pastel orange */
-    margin: 0 5% 0 5%;
   }
   
    .navigation li a {
@@ -193,7 +177,6 @@ figcaption { /* set specific rules for the figcaption */
   html {
     font-size: 1.383em;
     background-color: #ffff99; /* pastel yellow */
-    margin: 0 5% 0 5%;
   }
   
    .navigation li a {
