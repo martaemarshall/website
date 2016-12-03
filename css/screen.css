@@ -45,7 +45,8 @@ h3 { /* Modify all h3 elements */
   padding-bottom: 1.132em;
 }
 
-figure {
+img, 
+video {
   max-width: 100%;
 }
 
@@ -69,6 +70,7 @@ footer { /* Modify all footer elements */
 #navigation {
   position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
 }
 
@@ -98,14 +100,15 @@ footer { /* Modify all footer elements */
   color: blue;
 }
 /* ===== MODULAR STYLES ===== */
-figure,
-#navigation li a {
+img,
+video {
   display: block;
 }
 
-#navigation li { /* Keeps the navigation link lined up & stretch across page */
+#navigation li a { /* Keeps the navigation link lined up & stretch across page */
+  display: block;
   float: left;
-  width: 20% /* 5 links in the navigation bar */
+  width: 20%; /* 5 links in the navigation bar */
 }
 
 /* ===== STATE STYLES ===== */
