@@ -22,7 +22,9 @@ html { /* Modify font size, height of lines & spacing in html page  */
 }
 
 header {
-  padding-top: 3.667em;
+  padding-top: 4.889em;
+  background-color: white;
+  text-align: center;
 }
 
 h1 { /* Modify all h1 elements */
@@ -56,11 +58,17 @@ figcaption {
 
 footer { /* Modify all footer elements */
   font-size: 0.772em; /* 12.352px */
-  color: #ffffcc;
+  color: white;
   background-color: black;
+  font-weight: bold;
 }
 
 /* ===== LAYOUT STYLES ===== */
+#title {
+  font-size: 2.882em; /* 46.112px */
+  padding: 0.716em 0 0.716em 0;
+}
+
 #navigation li a,
 .u-url,
 .u-email { /* Removes underlines from href links */
@@ -103,6 +111,11 @@ footer { /* Modify all footer elements */
 img,
 video {
   display: block;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
 }
 
 #navigation li a { /* Keeps the navigation link lined up & stretch across page */
@@ -160,7 +173,7 @@ video {
 @media screen and (min-width: 1103px) {
   html {
     font-size: 1.383em;
-    background-color: teal; /*#ffff99; pastel yellow */
+    background-color: #1b89cc; /*#ffff99; pastel yellow */
   }
   
    .navigation li a {
