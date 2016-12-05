@@ -98,11 +98,21 @@ footer { /* Modify all footer elements */
   padding: 1.222em 3.667em;
 }
 
+.reason {
+  font-size: 1.296em; /* 20.736px */
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0 4.244em 1.061em 4.244em;
+}
+
 .footer {
   text-align: center;
   padding: 0.891em 0 0.891em 0;
 }
 
+#aesthepics #page {
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+}
 /*.u-email,
 .u-url { /* set the color of the url & email links 
   color: blue;
