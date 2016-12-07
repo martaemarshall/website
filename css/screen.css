@@ -23,7 +23,6 @@ html { /* Modify font size, height of lines & spacing in html page  */
 
 header {
   padding-top: 4.889em;
-  background-color: white;
   text-align: center;
 }
 
@@ -82,12 +81,13 @@ footer { /* Modify all footer elements */
   width: 100%;
 }
 
-#navigation li a { /* Allows a clickable box for nav links */ 
+#navigation li a { /* Allows a clickable box for nav links */
+  font-size: 1.296em; /* 20.736px */
   color: white;
   font-weight: bold;
   background-color: black;
   text-align: center;  
-  padding: 1.222em 0 1.222em 0;
+  padding: 1.061em 0 1.061em 0;
 }
 
 #navigation li:hover a { /* Making a bar that lights when selected */
@@ -101,8 +101,11 @@ footer { /* Modify all footer elements */
 .reason {
   font-size: 1.296em; /* 20.736px */
   text-align: center;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.75);
   padding: 0 4.244em 1.061em 4.244em;
+}
+.reason h2 {
+  font-weight: bold;
 }
 
 .footer {
@@ -110,9 +113,21 @@ footer { /* Modify all footer elements */
   padding: 0.891em 0 0.891em 0;
 }
 
+/* Specifc page design */
+#home header {
+  background-color: white;
+}
+
 #aesthepics #page {
   background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
 }
+
+#aesthepics header h2 {
+  padding: 0;
+  text-align: right;
+  padding-right: 7.456em;
+}
+
 /*.u-email,
 .u-url { /* set the color of the url & email links 
   color: blue;
@@ -125,6 +140,19 @@ video {
 
 #logo {
   display: flex;
+  justify-content: flex-start;
+  padding-left: 2.444em;
+}
+
+/* Specifc page design */
+#home #logo {
+  display: flex;
+  justify-content: center; 
+  padding: 0;
+}
+
+#aesthepics .contact-information figure {
+  display: flex;
   justify-content: center;
 }
 
@@ -135,7 +163,7 @@ video {
 }
 
 /* ===== STATE STYLES ===== */
-/*@media screen and (min-width: 181){
+@media screen and (min-width: 181){
   html {
     font-size: 1.125em;
     background-color: 77dd77;
@@ -145,11 +173,11 @@ video {
     font-size: 0.878em;
     padding: 0;
   }
-}*/
+}
 
 @media screen and (min-width: 373px){
   html {
-    background-color: #b19cd9; /* pastel purple */
+    background-color: #b19cd9;
   }
   
   .navigation li a {
@@ -160,7 +188,7 @@ video {
 @media screen and (min-width: 606px){
   html {
     font-size: 1.215em;
-    background-color: #87ceeb; /* sky blue */
+    background-color: #87ceeb; 
   }
   
    .navigation li a {
@@ -171,7 +199,7 @@ video {
 @media screen and (min-width: 790px) {
   html {
     font-size: 1.296em;
-    background-color: #ffcc33; /* pastel orange */
+    background-color: #ffcc33; 
   }
   
    .navigation li a {
@@ -183,7 +211,7 @@ video {
 @media screen and (min-width: 1103px) {
   html {
     font-size: 1.383em;
-    background-color: #1b89cc; /*#ffff99; pastel yellow */
+    background-color: #1b89cc; 
   }
   
    .navigation li a {
