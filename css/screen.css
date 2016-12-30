@@ -71,6 +71,10 @@ footer { /* Modify all footer elements */
   padding: 0.716em 0 0.716em 0;
 }
 
+header {
+  background-color: white;
+}
+
 #navigation li a,
 .u-url,
 .u-email { /* Removes underlines from href links */
@@ -121,8 +125,8 @@ img {
 }
 
 /* Specifc page design */
-#home header {
-  background-color: white;
+#about header {
+  background-color: initial;
 }
 
 #aesthepics #page {
@@ -162,7 +166,7 @@ img {
 
 #aesthepics .contact-information figure {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 #navigation li a { /* Keeps the navigation link lined up & stretch across page */
