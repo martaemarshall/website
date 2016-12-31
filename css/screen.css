@@ -138,6 +138,10 @@ img {
   background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
 }
 
+#resume #page {
+  background-color: #e8d0a9;
+}
+
 .u-email,
 .u-url { /* set the color of the url & email links */
   font-size: 1.476em;
