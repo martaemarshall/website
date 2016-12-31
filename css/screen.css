@@ -68,7 +68,7 @@ footer { /* Modify all footer elements */
 /* ===== LAYOUT STYLES ===== */
 #title {
   font-size: 2.882em; /* 46.112px */
-  padding: 0.716em 0 0.716em 0;
+  padding: 0.358em 0 0.358em 0;
 }
 
 header {
@@ -99,6 +99,11 @@ header {
 
 #navigation li:hover a { /* Making a bar that lights when selected */
   background-color: gray;
+}
+
+#follow {
+  font-family: cursive;
+  text-decoration: underline solid #1b89cc;
 }
 
 #main {
@@ -136,10 +141,14 @@ img {
 .u-email,
 .u-url { /* set the color of the url & email links */
   font-size: 1.476em;
-  color: white;
   font-weight: bold;
 }
 /* ===== MODULAR STYLES ===== */
+#navigation li a { /* Keeps the navigation link lined up & stretch across page */
+  display: block;
+  float: left;
+  width: 20%; /* 5 links in the navigation bar */
+}
 
 video {
   display: block;
@@ -147,8 +156,7 @@ video {
 
 #logo {
   display: flex;
-  justify-content: flex-start;
-  padding-left: 2.444em;
+  justify-content: center;
 }
 
 #main section figure
@@ -158,21 +166,11 @@ img {
 }
 
 /* Specifc page design */
-#home #logo {
-  display: flex;
-  justify-content: center; 
-  padding: 0;
-}
 
-#aesthepics .contact-information figure {
+#aesthepics .contact-information {
   display: flex;
-  justify-content: flex-end;
-}
-
-#navigation li a { /* Keeps the navigation link lined up & stretch across page */
-  display: block;
-  float: left;
-  width: 20%; /* 5 links in the navigation bar */
+  justify-content: center;
+  flex-direction: row;
 }
 
 /* ===== STATE STYLES ===== */
@@ -187,6 +185,7 @@ img {
   
   #title {
     font-size: 1.476em;
+    padding: 2.148em 0 2.148em 0;
   }
   
   .reason {
@@ -210,7 +209,7 @@ img {
   
   #title {
     font-size: 2.232em; /* 46.112px */
-    padding: 0.716em 0 0.716em 0;    
+    padding: 1.432em 0 1.432em 0;    
   }
     
   .reason {
@@ -226,7 +225,7 @@ img {
   
   #title {
     font-size: 2.479em; /* 46.112px */
-    padding: 0.716em 0 0.716em 0;    
+    padding: 1.074em 0 1.074em 0;     
   }
   
   #navigation li a {
@@ -242,7 +241,7 @@ img {
   
   #title {
     font-size: 2.645em; /* 46.112px */
-    padding: 0.716em 0 0.716em 0;    
+    padding: 0.716em 0 0.716em 0;       
   }
   
 }
@@ -258,7 +257,7 @@ img {
   }
   
   #title {
-    font-size: 2.882em; /* 46.112px */
+    font-size: 2.645em; /* 46.112px */
     padding: 0.716em 0 0.716em 0;    
   }
   
