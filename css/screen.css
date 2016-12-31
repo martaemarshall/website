@@ -165,12 +165,11 @@ img {
   margin: 0 auto;
 }
 
-/* Specifc page design */
-
-#aesthepics .contact-information {
+.contact-information {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  
 }
 
 /* ===== STATE STYLES ===== */
