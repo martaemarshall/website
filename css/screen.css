@@ -17,8 +17,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html { /* Modify font size, height of lines & spacing in html page  */
   font-size: 1.125em; /* 18px / 16px = 1.125em*/
   line-height: 1.222em; /* 22px is 1 gridline | 22px / 18px = 1.222em */
-  background-color: #d3d3d3; /* color of background: light gray */
-  font-family: cambria, calibri;
+  background-color: #e8f3f9; /* color of background: light blue */
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 header {
@@ -69,10 +69,6 @@ footer { /* Modify all footer elements */
 #title {
   font-size: 2.882em; /* 46.112px */
   padding: 0.358em 0 0.358em 0;
-}
-
-header {
-  background-color: white;
 }
 
 #navigation li a,
@@ -151,7 +147,7 @@ img {
 #navigation li a { /* Keeps the navigation link lined up & stretch across page */
   display: block;
   float: left;
-  width: 20%; /* 5 links in the navigation bar */
+  width: 25%; /* 5 links in the navigation bar */
 }
 
 video {
@@ -201,11 +197,7 @@ img {
   }
 }
 
-@media screen and (min-width: 373px){
-  html {
-    background-color: #b19cd9; /* purple */
-  }
-  
+@media screen and (min-width: 373px){  
   #navigation li a {
     font-size: 0.823em;
   }
@@ -223,7 +215,6 @@ img {
 @media screen and (min-width: 606px){
   html {
     font-size: 1.215em;
-    background-color: #87ceeb; /* sky blue */
   }
   
   #title {
@@ -239,7 +230,6 @@ img {
 @media screen and (min-width: 790px) {
   html {
     font-size: 1.296em;
-    background-color: #ffcc33; /* orange */
   }
   
   #title {
@@ -252,7 +242,6 @@ img {
 @media screen and (min-width: 1103px) {
   html {
     font-size: 1.383em;
-    background-color: #1b89cc; /* blue */
   }
   
    .navigation li a {
